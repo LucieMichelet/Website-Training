@@ -1,0 +1,134 @@
+/* Accueil */
+body {
+    background: url("https://w.forfun.com/fetch/a5/a571d8f133c6327b663005cc903a4cd0.jpeg?w=1200&r=0.5625");
+    background-size: cover;
+
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* 100% de la hauteur de la fenêtre visible */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+  /* Mise en Page du menu */
+header.ban{
+    background: url("https://w.forfun.com/fetch/59/59dba225a837b66eff19e80ba4243c5a.jpeg?w=1200&r=0.5625") no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity:0.9;
+  }
+header.ban p{
+  text-align: center;
+  font-size: 2.2em;
+  font-family: 'Cinzel Decorative',sans-serif;
+  color:white;
+  padding:0px;
+  font-weight: bold;
+}
+
+
+nav.menu-index ul {
+  margin:0;
+  top:0;
+  text-align: left; /* Ajout de cette règle pour aligner le texte à gauche */
+  padding: 0; /* Suppression de la marge intérieure par défaut */
+  list-style-type: none;
+  text-align: center;
+  background-color: rgb(15, 15, 15);
+  opacity:0.8;
+  }
+  
+nav.menu-index ul li.btn {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block; /* Changement de inline-table à inline-block */
+  }
+  
+nav.menu-index ul li.btn a {
+    text-decoration: none;
+    color : white;
+    padding: 10px; /* Ajout d'un espace autour du texte pour un meilleur aspect visuel */
+    display: block; /* Transformation en bloc pour occuper toute la largeur du conteneur */
+  }
+  
+nav.menu-index ul li.btn:hover{
+    background-color: rgb(199, 114, 44);
+    transition: 0.2s all;
+  }
+
+  /* Mise en page du corps */
+
+main#index {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  flex:1;
+}
+main#index section{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 49%;
+}
+
+
+/*Image d'accueil*/
+img.chat{
+    border: 5px solid rgb(251, 250, 250); 
+    border-radius: 20px; 
+    margin-bottom: 30px;
+  }
+
+footer{
+  font-size: 0.8em; 
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(15, 15, 15);
+  opacity:0.8;
+  padding-bottom: 1px;
+  padding-top: 1px;
+}
+footer p{
+  color : beige;
+  text-align: center;
+}
+
+/* Contact */
+main#contact{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  flex:1;
+}
+main#contact img{width: 5%;}
+
+main#contact div.coord{bottom:0;}
+main#contact .btn_send{
+  margin-bottom:30px;
+}
+main#contact .btn_send:hover::after{
+    display: block;
+}
+
+main#contact .mail{
+  color : black;
+  text-decoration: none;
+}
+
+/* Forum */
+main#forum {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  flex: 1;
+}
+
+main#forum div.left{
+  display: inline-block;
+  width: 30%;
+  padding: 10px;
+}
+
+.element{
+  text-align: center;
+  font-size: 25px;
+  background: rgb(171,89,51);
+  background: radial-gradient(circle, rgba(171,89,51,1) 0%, rgba(112,153,116,1) 100%);
+  border-radius: 30% 70% 70% 30% / 30% 58% 42% 70%;
+  padding: 100px;
+}
