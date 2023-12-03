@@ -1,33 +1,38 @@
 /* Accueil */
 body {
-    background: url("https://w.forfun.com/fetch/a5/a571d8f133c6327b663005cc903a4cd0.jpeg?w=1200&r=0.5625");
-    background-size: cover;
-
-    margin: 0;
-    padding: 0;
+    background-color: #3d0202;
+    background-image: url("https://www.transparenttextures.com/patterns/food.png"); 
+  
     min-height: 100vh; /* 100% de la hauteur de la fenêtre visible */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
+    color : beige;
 }
 
   /* Mise en Page du menu */
 header.ban{
-    background: url("https://w.forfun.com/fetch/59/59dba225a837b66eff19e80ba4243c5a.jpeg?w=1200&r=0.5625") no-repeat;
-    background-size: cover;
-    background-position: center;
-    opacity:0.9;
+  background-color: rgb(15, 15, 15);
+  opacity:0.8;
+  overflow: hidden;
   }
 header.ban p{
   text-align: center;
-  font-size: 2.2em;
-  font-family: 'Cinzel Decorative',sans-serif;
+  font-size: 2em;
+  font-family: 'Rock 3D';
   color:white;
-  padding:0px;
   font-weight: bold;
+  margin:0;
+  padding:0;
+  transition: transform 0.3s ease-in-out;
+
 }
 
-
+header.ban p:hover {
+    transform: scale(1.1);
+}
 nav.menu-index ul {
   margin:0;
   top:0;
@@ -76,6 +81,13 @@ img.chat{
     border-radius: 20px; 
     margin-bottom: 30px;
   }
+  .chat {
+    transition: transform 0.3s ease-in-out;
+}
+
+.chat:hover {
+    transform: scale(1.1);
+}
 
 footer{
   font-size: 0.8em; 
@@ -122,13 +134,4 @@ main#forum div.left{
   display: inline-block;
   width: 30%;
   padding: 10px;
-}
-
-.element{
-  text-align: center;
-  font-size: 25px;
-  background: rgb(171,89,51);
-  background: radial-gradient(circle, rgba(171,89,51,1) 0%, rgba(112,153,116,1) 100%);
-  border-radius: 30% 70% 70% 30% / 30% 58% 42% 70%;
-  padding: 100px;
 }
